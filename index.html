@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> MoonProxy </title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
         <div class="gradient-container">
@@ -11,22 +13,26 @@
         </div>
         <header>
             <nav class="navbar">
-                <div class="logo"><a href="#">Moonproxy.io</a></div>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Features</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="buttons">
-                    <input type="button" value="Buy now">
+                <div class="wrapper">
+                    <div class="logo"><a href="#">Moonproxy.io</a></div>
+                    <input type="radio" name="slider" id="menu-btn">
+                    <input type="radio" name="slider" id="close-btn">
+                    <ul class="nav-links">
+                        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a class="buttons" href="#">Buy now</a></li>
+                    </ul>
+                    <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
                 </div>
             </nav>
             <section class="hero-section">
+                <div class="hero-img">
+                    <img src="./assets/img/server.png" alt="Server">
+                </div>
                 <div class="hero-text">
-                    <div class="gradient-container">
-                        <div class="g2"></div>
-                    </div>
                     <p>MOONPROXY | #1 PROXY SERVICE</p>
                     <h2>Best Quality Proxy</h2>
                     <h2 style="margin-bottom:25px;">Empower Your Connectivity</h2>
@@ -35,15 +41,9 @@
                         <input type="button" value="Learn more">
                     </div>
                 </div>
-                <div class="hero-img">
-                    <img src="./assets/img/server.png" alt="Server" width="500" height="500">
-                </div>
             </section>
         </header>
         <section class="features">
-            <div class="gradient-container">
-                <div class="g1"></div>
-            </div>
             <div class="container">
                 <p class="title">Features</p>
                 <h3>Here's our features</h3>
@@ -83,9 +83,6 @@
                 </div>
             </div>
         </section>
-        <div class="gradient-container">
-            <div class="g2"></div>
-        </div>
         <section class="price">
             <div class="container">
                 <p class="title">Prices</p>
@@ -151,15 +148,17 @@
             </div>
         </section>
         <section class="faq">
-            <div class="faq-left">
-                <h3>Frequently asked questions</h3>
-                <p>For any questions or help you can contact us on either discord or telegram</p>
-            </div>
-            <div class="faq-right">
-                <h3 class="question">How fast do we complete orders?</h3>
-                <p class="answer">After purchase, they are done within 10-20 minutes.</p>
-                <h3 class="question">What payment methods?</h3>
-                <p class="answer">We currently only accept Bitcoin, Litecoin and ETH.</p>
+            <div class="faq-container">
+                <div class="faq-left">
+                    <h3>Frequently asked questions</h3>
+                    <p>For any questions or help you can contact us on either discord or telegram</p>
+                </div>
+                <div class="faq-right">
+                    <h3 class="question">How fast do we complete orders?</h3>
+                    <p class="answer">After purchase, they are done within 10-20 minutes.</p>
+                    <h3 class="question">What payment methods?</h3>
+                    <p class="answer">We currently only accept Bitcoin, Litecoin and ETH.</p>
+                </div>
             </div>
         </section>
         <section class="contact">
